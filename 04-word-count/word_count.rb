@@ -2,10 +2,10 @@
 
 
 def words(sentence)
-sentence = sentence.upcase.split(" ")
+words = sentence.split(" ")
 hash = {}
-sentence.uniq.each{|e| hash[e]= sentence.count(e)}
-puts hash
+words.uniq.each{|e| hash[e]= words.count(e)}
+return hash
 end
 
 
