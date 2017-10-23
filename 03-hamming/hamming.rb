@@ -1,9 +1,7 @@
 class Hamming
 
-
-
   def self.compute(str1, str2)
-    raise ArgumentError.new("Strands must be the same length in ordef to compare.") if str1.length != str2.length
+    raise ArgumentError.new("Strands must be the same length in order to compare.") if str1.length != str2.length
 
     total = str1.length
     distance = 0
